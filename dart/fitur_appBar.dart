@@ -19,11 +19,12 @@ class HalamanSatu extends StatelessWidget{
         ),// Icon
         title: Center(
           child: Text(
-          "Azur coffee",
+          "Diamond coffee",
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
             fontWeight: FontWeight.w600,
+            fontFamily:"popins",
           ),//TextStyle
           ),// Text
           
@@ -34,6 +35,16 @@ class HalamanSatu extends StatelessWidget{
           )//Icon
         ],
       ),//AppBar
+      body:Container(
+        child:Column(
+          children: [
+            Icon(Icons.coffee,size: 50,color: Colors.brown.shade800),
+            Icon(Icons.restaurant,size: 50,color: Colors.brown.shade800),
+            Icon(Icons.cake,size: 50,color: Colors.brown.shade800),
+            
+          ],//Children
+        ),//column
+      ),//Container
     );// scaffold
   }
 }
