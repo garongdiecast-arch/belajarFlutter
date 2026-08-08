@@ -64,7 +64,7 @@ class MyCard extends StatelessWidget{
           
               ],//Children
             )//Column
-          )//Container
-    ); //Scaffold
+          )//Card
+    ); //Container
   }
 }
