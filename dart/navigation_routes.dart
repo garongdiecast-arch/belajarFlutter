@@ -19,16 +19,16 @@ class HalSatu extends StatelessWidget{
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text('Music'),
-      ),
+      ),//AppBar
       body: Center(
         child: IconButton(
           onPressed:(){
             Navigator.pushNamed(context, '/HalDua');
-        }, 
+        },//OnPressed 
           icon: Icon(Icons.headset,color: Colors.brown,size: 50,) ,
-        ),
-      )
-    );
+        ),//IconButton
+      )//Center
+    );//Scaffold
   }
 }
 class HalDua extends StatelessWidget{
@@ -46,8 +46,8 @@ class HalDua extends StatelessWidget{
           //   Navigator.pushNamed(context, '/HalSatu');
           // }, 
           icon: Icon(Icons.speaker,color: Colors.brown,size: 50,) ,
-        ),
-      )
-    );
+        ),//IconButton
+      )//Center
+    );//Scaffold
   }
 }
