@@ -103,3 +103,10 @@ class DaftarMenu extends StatelessWidget {
     );//Container
   }
 }
+//Melakukan test jika gmabr tidak muncul
+Image(image: NetworkImage(icon), width: 100,
+            fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace) {
+            // Menampilkan ikon pengganti jika gambar gagal di-load / URL mati
+             return const Icon(Icons.broken_image, size: 50, color: Colors.grey);
+            },),
